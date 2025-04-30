@@ -4,18 +4,36 @@ apply from: 'buildsystem/dependencies.gradle'
 buildscript {
 //    ext.lambdaVersion = '3.7.0'
     repositories {
+
+        maven { url "https://maven.aliyun.com/repository/google"}
+        maven { url "https://maven.aliyun.com/repository/central"}
+        maven { url "https://maven.aliyun.com/repository/jcenter"}
+        maven { url "https://maven.aliyun.com/repository/gradle-plugin"}
+        maven { url 'http://developer.huawei.com/repo/'}
+        maven { url "https://bintray.com/wechat-sdk-team/maven"}
+        maven { url "https://maven.aliyun.com/nexus/content/groups/public/"}
+
         jcenter()
         mavenCentral()
         google()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.0.0'
+        classpath 'com.android.tools.build:gradle:4.0.1'
 //        classpath "me.tatarka:gradle-retrolambda:$lambdaVersion"
     }
 }
 
 allprojects {
     repositories {
+
+        maven { url "https://maven.aliyun.com/repository/google"}
+        maven { url "https://maven.aliyun.com/repository/central"}
+        maven { url "https://maven.aliyun.com/repository/jcenter"}
+        maven { url "https://maven.aliyun.com/repository/gradle-plugin"}
+        maven { url 'http://developer.huawei.com/repo/'}
+        maven { url "https://bintray.com/wechat-sdk-team/maven"}
+        maven { url "https://maven.aliyun.com/nexus/content/groups/public/"}
+
         jcenter()
         maven { url "https://jitpack.io" }
         google()
